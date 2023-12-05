@@ -1,0 +1,128 @@
+<!doctype html>
+
+<html>
+  <head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="lib/style.css">
+    <script src="lib/script.js"></script>
+  </head>
+
+  <body>
+    <div class="jumbotron text-center alert-primary">MEGAbook'a hoş geldiniz.</div><!--div jumbotron-->
+    <div class="container">
+
+      <div class="alert alert-primary" id="genelBilgi" role="alert">
+  Hoş geldiniz!<br>
+  <ul>
+    <li>Lütfen aşağıdaki GİRİŞ YAP ve KAYIT OL butonlarından birini seçiniz.</li>
+  
+  </ul>
+</div>
+      <div class="alert alert-info " id="divDeneme" role="alert">
+  Deneme talimatları
+</div>
+
+ 
+ <div class="row">
+      <div class="col md-6">
+        <button type="button" class="btn btn-primary btn-block" id="girisButton" onclick="girisLayout()">Giriş Yap</button>
+      </div>
+      <div class="col md-6">
+        <button type="button" class="btn btn-primary btn-block" id="kayitButton"onclick="kayitLayout()">Kayıt Ol</button>
+      </div>
+      
+ </div>
+<hr>
+
+
+
+      <div class="row">
+       <div class="col md-12">
+          <div class="card" id="girisYapalani">
+            <div class="card-header alert-primary">
+              Giriş Yap
+            </div><!--div card-header-->
+            <div class="card-body alert-warning ">
+              <form class="form-group">
+                <label for="kullaniciAdi">Kullanıcı adınız: <small>(gerekli)</small></label>
+                <input type="text" id="kullaniciAdi" class="form-control" required>
+                <label for="password">Şifreniz: <small>(gerekli)</small></label>
+                <input type="password" id="password" class="form-control" required><br>
+                 <input type="submit" class="btn btn-primary" value="Giriş Yap" style="width:49%;" id="girisYap" onclick="girisKontrolu()">
+                 <input type="reset" class="btn btn-dark" value="Temizle" style="width:49%;" id="temizle1">
+
+                
+              </form><!--form-->
+          </div><!--div card-body-->
+         </div><!--div card-->
+
+          <div class="card" id="kayitOlAlani">
+            <div class="card-header alert-primary">
+              Kayıt Ol
+            </div><!--div card-header-->
+            <div class="card-body alert-warning">
+              <form class="form-group">
+                <label for="ad">Adınız: <small>(gerekli)</small></label>
+                <input type="text" id="ad" class="form-control" required>
+                <label for="soyad">Soydınız: <small>(gerekli)</small></label>
+                <input type="text" id="soyad" class="form-control" required>
+                <label for="email">E-posta adresiniz: <small>(gerekli)</small></label>
+                <input type="email" id="email" class="form-control" required>
+                <label for="passwordGiris">Şifreniz: <small>(gerekli)</small></label>
+                <input type="password" id="passwordGiris" class="form-control" required>
+                <label for="passwordTekrar">Şifreyi tekrar giriniz: <small>(gerekli)</small></label>
+                <input type="password" id="passwordTekrar" class="form-control" required>
+                <input type="checkbox" id="kosullar" required>
+                <label for="kosullar"> Koşulları kabul ediyorum.</label><br>
+                <input type="submit" class="btn btn-primary" value="Kayıt ol" style="width:49%;" id="kayitOl" onclick="sifreEslesesmi()">
+                 <input type="reset" class="btn btn-dark" value="Temizle" style="width:49%;" id="temizle2">
+
+                
+              </form><!--form-->
+          </div><!--div card-body-->
+         </div><!--div card-->
+
+  
+
+         <div class="card" id="karsilamaEkrani">
+            <div class="card-header alert-primary">
+              HOŞ GELDİNİZ!
+            </div><!--div card-header-->
+            <div class="card-body alert-warning">
+              <h5>MEGAtweet'e Hoş Geldiniz!</h5>
+              <p>Tweet'leri görebilmek için hemen şimdi ücretsiz kayıt olun, eğer üyeyseniz giriş yapın.</p>
+          </div><!--div card-body-->
+         </div><!--div card-->
+
+         <hr>
+
+
+
+
+         
+
+
+
+
+
+
+          </div>
+</div>
+          
+          
+          
+        </div><!--div col-->
+        
+        
+        
+        
+      </div><!--div row-->
+      
+      
+      
+      
+      
+      
+    </div><!--div container-->
+  </body>
+</html>
