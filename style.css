@@ -1,0 +1,10 @@
+/* Add your styles here */
+
+label {
+  margin-top:5px;
+}
+
+.jumbotron {
+  font-size: 32px;
+  font-weight: bold;
+}
